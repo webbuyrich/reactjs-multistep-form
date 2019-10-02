@@ -35,7 +35,7 @@ export class Confirm extends Component {
                 <p>
                     <Card style={{ width: '18rem' }}>
                         <Card.Body>
-                            <Card.Title>Eamil:</Card.Title>
+                            <Card.Title>Email:</Card.Title>
                             <Card.Text>
                                 {values.email}
                             </Card.Text>
