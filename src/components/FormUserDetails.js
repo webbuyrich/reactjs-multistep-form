@@ -22,7 +22,7 @@ export class FormUserDetails extends Component {
                         <Form.Label>First Name</Form.Label>
                         <Form.Control 
                             type="text" 
-                            onChange={this.handleChange} 
+                            onChange={handleChange('firstName')} 
                             defaultValue={values.firstName}
                             placeholder="Enter first name" 
                         />                        
@@ -31,7 +31,7 @@ export class FormUserDetails extends Component {
                         <Form.Label>Last Name</Form.Label>
                         <Form.Control
                             type="text"
-                            onChange={this.handleChange}
+                            onChange={handleChange('lastName')}
                             defaultValue={values.lastName}
                             placeholder="Enter first name" 
                         />
@@ -42,7 +42,7 @@ export class FormUserDetails extends Component {
                         <Form.Control 
                             type="email" 
                             placeholder="Enter your email" 
-                            onChange={this.handleChange}
+                            onChange={handleChange('email')}
                             defaultValue={values.email}
                         />
                         <Form.Text className="text-muted">
@@ -55,7 +55,7 @@ export class FormUserDetails extends Component {
                         onClick={this.continue}
                     >
                         Submit
-                </Button>
+                    </Button>
                 </Form>
             </Container>
             
