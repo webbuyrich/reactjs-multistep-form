@@ -46,7 +46,8 @@ export class FormPersonalDetails extends Component {
                     <Form.Group controlId="bio">
                         <Form.Label>Bio</Form.Label>
                         <Form.Control
-                            type="text"
+                            as="textarea"
+                            rows="3"
                             placeholder="Enter your bio"
                             onChange={handleChange('bio')}
                             defaultValue={values.bio}
